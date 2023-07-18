@@ -1,0 +1,52 @@
+@import "breakpoint";
+@import "mixins";
+@import "fonts";
+@import "variables";
+@import "settings";
+@import "typography";
+@import "layouts";
+
+// страницы 
+// index
+@import "pages/index";
+// главная
+@import "pages/mainPage/mainPage";
+
+// пример (удалить)
+.test {
+    color: #fff;
+
+    @include hidden-scroll;
+
+    &._active {
+
+    }
+
+    &:last-child {
+        @include screenXS {
+
+        }
+    }
+
+    &::before {
+
+    }
+
+    .test__title {
+
+    }
+}
+
+// элемент внутри блока лежит отдельно
+.test__title {
+
+}
+
+.test1 {
+    color: #fff;
+
+    @include hidden-scroll;
+}
+
+
+
