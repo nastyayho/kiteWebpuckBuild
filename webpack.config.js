@@ -53,17 +53,6 @@ function returnEntries(globPath){
 }
 const plugins = () => {
   const basePlugins = [
-    // new HTMLWebpackPlugin({
-    //   // template: path.resolve(__dirname, 'src/template/pages/index.html'),
-    //   ...PAGES.map(page => new HTMLWebpackPlugin({
-    //     template: `${PAGES_DIR}/${page}`,
-    //     filename: `./${page.replace(/\.html/,'.html')}`
-    //   })),
-    //   // filename: 'index.html',
-    //   minify: {
-    //     collapseWhitespace: isProd
-    //   }
-    // }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: `./css/${filename('css')}`
@@ -71,7 +60,6 @@ const plugins = () => {
     new CopyWebpackPlugin({
       patterns: [
         {from: path.resolve(__dirname, 'src/common') , to: path.resolve(__dirname, 'app/common')}
-          // {from: path.resolve(__dirname, 'src/assets') , to: path.resolve(__dirname, 'app/assets')}
       ]
     }),
 
@@ -125,8 +113,6 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, 'app'),
-    // open: true,
-    // hot: true,
     compress: true,
     port: 3000,
     writeToDisk: true,
@@ -145,13 +131,6 @@ module.exports = {
           }
         }]
       },
-      // {
-      //   test: /\.html$/,
-      //   loader: 'html-loader',
-      //   options: {
-      //     // pretty: true,
-      //   }
-      // },
       {
         test: /\.css$/i,
         use: [
@@ -189,9 +168,7 @@ module.exports = {
         use: [{
           loader: 'file-loader',
           options: {
-            // name:`./common/img/${filename('[ext]')}`
               name: `[path][name].[ext]`,
-              // context: 'src/assets'
           }
         }],
       },
