@@ -10,6 +10,8 @@ const ImageminPlugin = require('imagemin-webpack');
 const glob_entries = require('webpack-glob-entries')
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
+// const ESLintPlugin = require('eslint-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 const filename = (ext) => isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`;
 
@@ -61,6 +63,10 @@ const plugins = () => {
       patterns: [
         {from: path.resolve(__dirname, 'src/common') , to: path.resolve(__dirname, 'app/common')}
       ]
+    }),
+    new StylelintPlugin({
+      configFile: '.stylelintrc.json', // Путь к вашему конфигурационному файлу Stylelint
+      files: '**/*.scss', // Паттерн файлов для проверки стилей
     }),
 
     ...PAGES.map(page => new HTMLWebpackPlugin({

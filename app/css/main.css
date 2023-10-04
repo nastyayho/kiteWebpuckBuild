@@ -123,25 +123,4 @@ b, strong {
   margin-top: 10px;
 }
 
-.test {
-  color: #fff;
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
-}
-.test::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-.test1 {
-  color: #fff;
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
-}
-.test1::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
 /*# sourceMappingURL=main.css.map*/

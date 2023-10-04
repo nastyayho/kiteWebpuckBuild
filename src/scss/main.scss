@@ -9,44 +9,9 @@
 // страницы 
 // index
 @import "pages/index";
+
 // главная
 @import "pages/mainPage/mainPage";
 
-// пример (удалить)
-.test {
-    color: #fff;
-
-    @include hidden-scroll;
-
-    &._active {
-
-    }
-
-    &:last-child {
-        @include screenXS {
-
-        }
-    }
-
-    &::before {
-
-    }
-
-    .test__title {
-
-    }
-}
-
-// элемент внутри блока лежит отдельно
-.test__title {
-
-}
-
-.test1 {
-    color: #fff;
-
-    @include hidden-scroll;
-}
-
-
-
+// test
+@import "pages/test";
