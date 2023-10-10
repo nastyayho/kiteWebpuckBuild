@@ -1,25 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./js/common/test.js":
-/*!***************************!*\
-  !*** ./js/common/test.js ***!
-  \***************************/
-/*! unknown exports (runtime-defined) */
-/*! runtime requirements:  */
-/***/ (() => {
-
-// (function () {
-//     const someBlock = $('.some-block');
-//     const someBlockElements = $(".some-block-element");
-//     console.log(someBlockElements.length);
-//     someBlockElements.each(function (index, item) {
-//       $(item).addClass('_active');
-//     })
-// })();
-
-/***/ }),
-
 /***/ "./js/main.js":
 /*!********************!*\
   !*** ./js/main.js ***!
@@ -34,11 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/main.scss */ "./scss/main.scss");
-/* harmony import */ var _common_test__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./common/test */ "./js/common/test.js");
-/* harmony import */ var _common_test__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_common_test__WEBPACK_IMPORTED_MODULE_2__);
 // eslint-disable-next-line no-unused-vars
-
- // пример скрипта
 
 
 
